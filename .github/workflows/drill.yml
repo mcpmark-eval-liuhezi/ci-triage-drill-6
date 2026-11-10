@@ -1,0 +1,13 @@
+name: ci-triage-drill
+
+on:
+  workflow_dispatch:
+
+jobs:
+  drill:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deliberate failure
+        run: |
+          echo 'DRILL-FAIL'
+          exit 1
